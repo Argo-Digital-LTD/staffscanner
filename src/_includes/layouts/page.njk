@@ -20,7 +20,9 @@
     >
       {{ heading }}
     </h1>
-    <main class="flex flex-col items-stretch pt-8 bg-white">
+    <main
+      class="flex flex-col items-stretch px-4 pt-4 bg-white lg:pt-8"
+    >
       <div class="self-center prose">{{ content | safe }}</div>
       {% include "layouts/partials/footer.njk" %}
     </main>
