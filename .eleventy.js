@@ -1,6 +1,6 @@
 // from https://github.com/fpapado/eleventy-with-vite
 
-const fs = require('fs');
+const fs = require('fs').promises;
 const path = require('path');
 const markdownIt = require('markdown-it');
 
@@ -38,10 +38,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode(
     'viteScriptTag',
     viteScriptTag,
-  );
-  eleventyConfig.addNunjucksAsyncShortcode(
-    'viteLegacyScriptTag',
-    viteLegacyScriptTag,
   );
   eleventyConfig.addNunjucksAsyncShortcode(
     'viteLinkStylesheetTags',

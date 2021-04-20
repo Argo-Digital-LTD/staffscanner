@@ -10,8 +10,8 @@
     />
     <title>{{title or metadata.title}}</title>
     {% if build.env == "production" %} {# Add any CSS from the main
-    script #} {% viteLinkStylesheetTags "src/client/main.js" %} {%
-    viteLinkModulePreloadTags "src/client/main.js" %} {% endif %}
+    script #} {% viteLinkStylesheetTags "src/client/main.ts" %} {%
+    viteLinkModulePreloadTags "src/client/main.ts" %} {% endif %}
   </head>
   <body>
     <main>
@@ -68,9 +68,8 @@
     https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables
     #} {% if build.env == "production" %} {# We must read the
     production scripts from the Vite manifest. We defer that logic to
-    a custom shortcode #} {% viteScriptTag "src/client/main.js" %} {%
-    viteLegacyScriptTag "vite/legacy-polyfills" %} {%
-    viteLegacyScriptTag "src/client/main-legacy.js" %} {% else %}
+    a custom shortcode #} {% viteScriptTag "src/client/main.ts" %} {%
+    else %}
     <script
       type="module"
       src="http://localhost:3000/@vite/client"
