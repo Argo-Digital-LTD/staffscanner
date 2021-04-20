@@ -23,6 +23,9 @@ module.exports = {
         'staffscanner-light': '#F0F5FF',
         'staffscanner-orange': '#EA580C',
       },
+      transitionProperty: {
+        spacing: 'margin, padding',
+      },
     },
   },
   plugins: [require('@tailwindcss/typography')],

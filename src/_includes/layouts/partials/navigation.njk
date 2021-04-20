@@ -1,7 +1,6 @@
 <nav
-  class="flex items-center justify-between p-4 lg:p-8"
+  class="flex items-center justify-between w-full p-4 lg:p-8"
   x-data="{ isOpen: false }"
-  @keydown.escape="isOpen = false"
 >
   <div>
     <a href="/"><img src="/img/logo.svg" /></a>
@@ -50,7 +49,77 @@
     x-transition:leave-start="opacity-100 transform scale-100"
     x-transition:leave-end="opacity-0 transform scale-90"
   >
-    <div class="px-4 pt-16 lg:p-0">
+    <div class="px-4 pt-20 lg:p-0">
+      <ul
+        class="flex flex-col p-4 pb-0 bg-white rounded-md shadow-md lg:shadow-none lg:p-4 lg:bg-transparent lg:flex-row staffscanner__navlinks"
+      >
+        {% include "layouts/partials/links.njk" %}
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<nav
+  class="fixed top-0 z-10 flex items-center justify-between w-full p-4 transition-all transform backdrop-filter backdrop-blur-lg bg-staffscanner-light bg-opacity-70"
+  x-data="{ isOpen: false, isFixed: false }"
+  @keydown.escape="isOpen = false"
+  x-show="isFixed"
+  x-transition:enter="transition ease-out duration-300"
+  x-transition:enter-start="-translate-y-full transform"
+  x-transition:enter-end="-translate-y-0 transform"
+  x-transition:leave="transition ease-in duration-300"
+  x-transition:leave-start="opacity-100"
+  x-transition:leave-end="opacity-0"
+  x-on:scroll.window="onScroll(window.pageYOffset, 20, () => { isFixed = true }, () => { isFixed = false }, isFixed)"
+>
+  <div>
+    <a href="/"><img src="/img/logo.svg" /></a>
+  </div>
+
+  <div class="hidden lg:block">
+    <ul class="flex staffscanner__navlinks">
+      {% include "layouts/partials/links.njk" %}
+    </ul>
+  </div>
+
+  <!--Toggle button (hidden on large screens)-->
+  <button
+    @click="isOpen = !isOpen"
+    type="button"
+    class="block px-2 text-gray-500 lg:hidden focus:outline-none"
+    :class="{ 'transition transform-180 fixed z-50 top-6 right-4': isOpen }"
+  >
+    <svg
+      class="w-6 h-6 fill-current"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+    >
+      <path
+        x-show="isOpen"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+      />
+      <path
+        x-show="!isOpen"
+        fill-rule="evenodd"
+        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+      />
+    </svg>
+  </button>
+
+  <div
+    class="fixed top-0 left-0 z-40 justify-end flex-grow block w-full lg:hidden"
+    @click.away="isOpen = false"
+    x-show="isOpen"
+    x-transition:enter="transition ease-out duration-200"
+    x-transition:enter-start="opacity-0 transform scale-90"
+    x-transition:enter-end="opacity-100 transform scale-100"
+    x-transition:leave="transition ease-in duration-200"
+    x-transition:leave-start="opacity-100 transform scale-100"
+    x-transition:leave-end="opacity-0 transform scale-90"
+  >
+    <div class="px-4 pt-20 lg:p-0">
       <ul
         class="flex flex-col p-4 pb-0 bg-white rounded-md shadow-md lg:shadow-none lg:p-4 lg:bg-transparent lg:flex-row staffscanner__navlinks"
       >

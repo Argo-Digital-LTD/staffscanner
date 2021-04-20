@@ -14,23 +14,23 @@
     script #} {% viteLinkStylesheetTags "src/client/main.ts" %} {%
     viteLinkModulePreloadTags "src/client/main.ts" %} {% endif %}
   </head>
-  <body>
-    {% include "layouts/partials/navigation.njk" %}
-    <h1
-      class="my-8 text-4xl font-extrabold text-center text-staffscanner-dark"
-    >
-      {{ heading }}
-    </h1>
-    <main
-      class="flex flex-col items-stretch px-4 pt-4 bg-white lg:pt-8"
-    >
+  <body class="bg-white">
+    <div class="bg-staffscanner-light">
+      {% include "layouts/partials/navigation.njk" %}
+      <h1
+        class="py-8 text-4xl font-extrabold text-center text-staffscanner-dark"
+      >
+        {{ heading }}
+      </h1>
+    </div>
+    <main class="flex flex-col items-stretch px-4 pt-4 lg:pt-8">
       <div class="self-center prose">{{ content | safe }}</div>
-      {% include "layouts/partials/footer.njk" %}
     </main>
-    {# We must split development and production scripts In
-    development, vite runs a server to resolve and reload scripts In
-    production, the scripts are statically replaced at build-time The
-    build.env variable is assigned in src/_data/build.js @see
+    {% include "layouts/partials/footer.njk" %} {# We must split
+    development and production scripts In development, vite runs a
+    server to resolve and reload scripts In production, the scripts
+    are statically replaced at build-time The build.env variable is
+    assigned in src/_data/build.js @see
     https://vitejs.dev/guide/backend-integration.html#backend-integration
     @see
     https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables

@@ -1,4 +1,15 @@
-<div class="flex flex-col items-center">
+<div
+  class="flex flex-col items-center transition duration-500 transform"
+  x-data="{
+        loaded: false
+    }"
+  x-ref="section"
+  :class="{
+        'translate-y-0 opacity-100': loaded,
+        'translate-y-10 opacity-0': !loaded
+    }"
+  x-init="() => { createObserver($refs.section, 0.8, () => {loaded = true}, () => {loaded = false})}"
+>
   <div class="flex flex-col w-full h-full grid-cols-12 lg:grid">
     <div
       class="flex flex-col justify-center col-span-3 col-start-4 px-4 lg:px-0"
