@@ -1,0 +1,17 @@
+<nav class="flex items-center justify-between p-8">
+  <div>
+    <img src="/img/logo.svg" />
+  </div>
+  <ul class="flex staffscanner__navlinks">
+    <li>
+      {% set button = {text: 'Login', href:
+      'https://my.staffscanner.co.uk/login'} %} {% include
+      "layouts/components/button-alt.njk" %}
+    </li>
+    <li>
+      {% set button = {text: 'Join Staffscanner', href:
+      'https://my.staffscanner.co.uk/register'} %} {% include
+      "layouts/components/button.njk" %}
+    </li>
+  </ul>
+</nav>

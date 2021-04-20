@@ -1,0 +1,12 @@
+<div class="flex flex-col items-center">
+  <div class="grid w-full h-full grid-cols-12">
+    <div class="flex flex-col justify-center col-span-3 col-start-4">
+      <div class="font-medium text-staffscanner-orange">
+        {{ feature.smallTitle }}
+      </div>
+      <div class="text-3xl font-semibold">{{ feature.title }}</div>
+      <div class="text-sm text-gray-500">{{ feature.subtitle }}</div>
+    </div>
+    {{ feature.image | safe }}
+  </div>
+</div>

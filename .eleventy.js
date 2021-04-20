@@ -1,6 +1,6 @@
 // from https://github.com/fpapado/eleventy-with-vite
 
-const fs = require('fs/promises');
+const fs = require('fs');
 const path = require('path');
 const markdownIt = require('markdown-it');
 
@@ -17,6 +17,16 @@ module.exports = function (eleventyConfig) {
     'code',
   );
   eleventyConfig.setLibrary('md', configuredMdLibrary);
+
+  eleventyConfig.addPairedShortcode('markdown', (content) => {
+    return configuredMdLibrary.render(content);
+  });
+
+  // Copy the `img/` directory
+  eleventyConfig.addPassthroughCopy('img');
+
+  // Copy the `font/` directory
+  eleventyConfig.addPassthroughCopy('font');
 
   // Read Vite's manifest.json, and add script tags for the entry files
   // You could decide to do more things here, such as adding preload/prefetch tags
@@ -125,7 +135,7 @@ module.exports = function (eleventyConfig) {
   }
 
   return {
-    templateFormats: ['md', 'njk', 'html'],
+    templateFormats: ['md', 'njk', 'html', 'png', 'svg', 'woff2'],
     pathPrefix: PATH_PREFIX,
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',

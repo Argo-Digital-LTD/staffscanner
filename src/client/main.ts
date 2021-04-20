@@ -1,6 +1,3 @@
-import 'alpinejs';
-import './css/main.css';
-
-declare global {
-  interface Window {}
-}
+import 'vite/dynamic-import-polyfill';
+import './css/index.css';
+import './css/inter.css';

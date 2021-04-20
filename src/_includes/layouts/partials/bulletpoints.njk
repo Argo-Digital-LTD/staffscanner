@@ -1,0 +1,27 @@
+<div class="flex flex-col items-center">
+  <div class="grid w-full grid-cols-12">
+    <ul class="flex justify-between col-span-8 col-start-3 py-16">
+      {% for item in bulletpoints %}
+      <li class="flex flex-col items-center">
+        <div
+          class="p-6 rounded-full bg-staffscanner-mid text-staffscanner-dark"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-9 h-9"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            {{ item.icon | safe }}
+          </svg>
+        </div>
+        <h5 class="staffscanner__h5">{{ item.title }}</h5>
+        <div class="max-w-xs text-sm text-center text-gray-500">
+          {{ item.subtitle }}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
