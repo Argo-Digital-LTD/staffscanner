@@ -7,7 +7,7 @@ module.exports = {
     // be kept
     safeList: [],
     content: [
-      './index.html',
+      './src/_includes/**/*.njk',
       './src/**/*.ts',
       // etc.
     ],
