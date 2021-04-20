@@ -1,7 +1,9 @@
 <div class="flex flex-col items-center">
-  <div class="grid w-full h-full grid-cols-12">
+  <div
+    class="flex flex-col-reverse w-full h-full grid-cols-12 lg:grid"
+  >
     {{ feature.image | safe }}
-    <div class="flex flex-col justify-center col-span-3">
+    <div class="flex flex-col justify-center col-span-3 px-4 lg:px-0">
       <div class="font-medium text-staffscanner-orange">
         {{ feature.smallTitle }}
       </div>

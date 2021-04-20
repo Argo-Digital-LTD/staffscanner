@@ -13,11 +13,25 @@ body {
 }
 
 .staffscanner__navlinks li {
-  @apply px-3 font-medium text-gray-900;
+  @apply inline-flex font-medium text-gray-900;
 }
 
-.staffscanner__header {
-  background-image: url('/img/header-blob.png');
+@media (max-width: 767px) {
+  .staffscanner__navlinks li a {
+    @apply w-full mb-4 text-center;
+  }
+}
+
+@screen lg {
+  .staffscanner__navlinks li {
+    @apply inline-flex px-3 font-medium text-gray-900;
+  }
+}
+
+@screen lg {
+  .staffscanner__header {
+    background-image: url('/img/header-blob.png');
+  }
 }
 
 .staffscanner__app {
@@ -26,18 +40,26 @@ body {
 
 .staffscanner__feature--notifications {
   background-image: url('/img/app-notifications.png');
-  @apply col-span-4 bg-right-bottom bg-no-repeat bg-cover;
-  height: 600px;
+  @apply col-span-4 bg-bottom bg-no-repeat bg-contain;
+  height: 450px;
 }
 
 .staffscanner__feature--profile {
   background-image: url('/img/app-profile.png');
-  @apply col-span-4 col-start-4 bg-right-bottom bg-no-repeat bg-cover;
-  height: 600px;
+  @apply col-span-4 col-start-4 bg-bottom bg-no-repeat bg-contain;
+  height: 450px;
 }
 
 .staffscanner__feature--pricing {
   background-image: url('/img/app-pricing.png');
-  @apply col-span-4 bg-right-bottom bg-no-repeat bg-cover;
-  height: 600px;
+  @apply col-span-4 bg-bottom bg-no-repeat bg-contain;
+  height: 450px;
+}
+
+@screen lg {
+  .staffscanner__feature--notifications,
+  .staffscanner__feature--pricing,
+  .staffscanner__feature--profile {
+    height: 600px;
+  }
 }

@@ -1,8 +1,10 @@
 <div class="flex flex-col items-center">
   <div class="grid w-full grid-cols-12">
-    <ul class="flex justify-between col-span-8 col-start-3 py-16">
+    <ul
+      class="flex flex-col justify-between col-span-8 col-start-3 py-16 lg:flex-row"
+    >
       {% for item in bulletpoints %}
-      <li class="flex flex-col items-center">
+      <li class="flex flex-col items-center mb-12 lg:mb-0">
         <div
           class="p-6 rounded-full bg-staffscanner-mid text-staffscanner-dark"
         >
