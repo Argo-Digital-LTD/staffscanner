@@ -131,7 +131,15 @@ module.exports = function (eleventyConfig) {
   }
 
   return {
-    templateFormats: ['md', 'njk', 'html', 'png', 'svg', 'woff2'],
+    templateFormats: [
+      'md',
+      'njk',
+      'html',
+      'png',
+      'svg',
+      'woff2',
+      'ico',
+    ],
     pathPrefix: PATH_PREFIX,
     markdownTemplateEngine: 'njk',
     htmlTemplateEngine: 'njk',

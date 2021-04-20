@@ -8,6 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    {% include "layouts/components/metadata.njk" %}
     <title>{{title or metadata.title}}</title>
     {% if build.env == "production" %} {# Add any CSS from the main
     script #} {% viteLinkStylesheetTags "src/client/main.ts" %} {%
