@@ -1,0 +1,18 @@
+<div
+  class="flex flex-col h-screen bg-right-top bg-no-repeat bg-contain staffscanner__header"
+  style="max-height: 85vh"
+>
+  <header class="flex flex-col flex-1">
+    {% include "layouts/partials/navigation.njk" %}
+    <div class="grid self-stretch flex-1 w-full grid-cols-12 p-8">
+      <div class="self-center col-span-4">
+        <h1 class="text-4xl font-extrabold text-staffscanner-dark">
+          Connecting you to short term care shifts in your area.
+        </h1>
+      </div>
+    </div>
+  </header>
+</div>
+
+{% set partners = ['/img/Thistle.png', '/img/Balhousie.png',
+'/img/Barchester.png'] %} {% include "layouts/partials/trusted.njk" %}

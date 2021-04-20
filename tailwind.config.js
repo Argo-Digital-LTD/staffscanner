@@ -1,23 +1,29 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: {
-    enabled: process.env.NODE_ENV === "production",
+    enabled: process.env.NODE_ENV === 'production',
     // classes that are generated dynamically, e.g. `rounded-${size}` and must
     // be kept
     safeList: [],
     content: [
-      "./index.html",
-      "./src/**/*.ts",
+      './index.html',
+      './src/**/*.ts',
       // etc.
     ],
   },
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      },
+      colors: {
+        'staffscanner-dark': '#006FD6',
+        'staffscanner-mid': '#E0EBFF',
+        'staffscanner-light': '#F0F5FF',
+        'staffscanner-orange': '#EA580C',
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require('@tailwindcss/typography')],
 };
