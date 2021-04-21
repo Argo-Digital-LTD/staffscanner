@@ -67,9 +67,9 @@
   x-transition:enter="transition ease-out duration-300"
   x-transition:enter-start="-translate-y-full transform"
   x-transition:enter-end="-translate-y-0 transform"
-  x-transition:leave="transition ease-in duration-300"
-  x-transition:leave-start="opacity-100"
-  x-transition:leave-end="opacity-0"
+  x-transition:leave="ease-in duration-300 transition-spacing"
+  x-transition:leave-start="opacity-100 lg:p-4"
+  x-transition:leave-end="opacity-0 lg:p-8"
   x-on:scroll.window="onScroll(window.pageYOffset, 20, () => { isFixed = true }, () => { isFixed = false }, isFixed)"
 >
   <div>
