@@ -5,7 +5,7 @@
 @import 'tailwindcss/utilities';
 
 body {
-  @apply bg-staffscanner-light;
+  @apply relative overflow-x-hidden bg-staffscanner-light;
 }
 
 .staffscanner__h5 {
@@ -32,6 +32,9 @@ body {
   .staffscanner__header {
     background-image: url('/img/header-blob.png');
   }
+  .staffscanner__header--org {
+    background-image: url('/img/header-blob-org.png');
+  }
 }
 
 .staffscanner__app {
@@ -56,10 +59,67 @@ body {
   height: 450px;
 }
 
+.staffscanner__feature--rates {
+  background-image: url('/img/web-rates.png');
+  @apply col-span-4 bg-bottom bg-no-repeat bg-contain;
+  height: 450px;
+}
+
+.staffscanner__feature--boosted {
+  background-image: url('/img/app-boosted.png');
+  @apply col-span-4 col-start-4 bg-bottom bg-no-repeat bg-contain;
+  height: 450px;
+}
+
+.staffscanner__feature--graphs {
+  background-image: url('/img/web-graphs.png');
+  @apply col-span-4 bg-bottom bg-no-repeat bg-contain;
+  height: 450px;
+}
+
+.staffscanner__switcheroo {
+  @apply px-8 py-1 mr-2 rounded-lg;
+}
+
+.staffscanner__app--web {
+  background-image: url('/img/mac-web-shift.png');
+  height: 450px;
+}
+
+.staffscanner__app--mobile {
+  background-image: url('/img/manager-app.png');
+  height: 450px;
+}
+
+.staffscanner__organisation {
+}
+
+@screen lg {
+  .staffscanner__organisation {
+    height: 500px;
+  }
+}
+
+.staffscanner__organisation--bullets li {
+  @apply mb-2 text-lg font-medium list-disc;
+  padding-inline-start: 1ch;
+  margin-inline-start: 1.5rem;
+}
+
+.staffscanner__organisation--bullets li::marker {
+  content: '👉';
+  /* text-align: -webkit-match-parent;
+  padding-inline-start: 1ch;
+  margin-inline-start: 2.5rem; */
+}
+
 @screen lg {
   .staffscanner__feature--notifications,
   .staffscanner__feature--pricing,
-  .staffscanner__feature--profile {
+  .staffscanner__feature--profile,
+  .staffscanner__feature--graphs,
+  .staffscanner__feature--rates,
+  .staffscanner__feature--pricing {
     height: 600px;
   }
 }

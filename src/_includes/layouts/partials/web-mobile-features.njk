@@ -1,0 +1,107 @@
+<div x-data="features()">
+  <div class="flex flex-col bg-staffscanner-mid">
+    <div
+      class="flex self-center p-1 mt-8 rounded-lg bg-staffscanner-light"
+    >
+      <button
+        class="staffscanner__switcheroo focus:outline-none"
+        :class="{ 'bg-staffscanner-electric text-white' : getState('web'), 'text-gray-900' : !getState('web') }"
+        @click="switchToWeb()"
+      >
+        Web
+      </button>
+      <button
+        class="staffscanner__switcheroo focus:outline-none"
+        :class="{ 'bg-staffscanner-electric text-white' : getState('mobile'), 'text-gray-900' : !getState('mobile') }"
+        @click="switchToMobile()"
+      >
+        Mobile
+      </button>
+    </div>
+
+    <div class="relative">
+      <div
+        x-show="getState('web')"
+        x-transition:enter="transition duration-300"
+        x-transition:enter-start="opacity-0 transform -translate-x-1/4"
+        x-transition:enter-end="opacity-100 transform translate-x-0 relative"
+        x-transition:leave="transition duration-300 absolute top-0"
+        x-transition:leave-start="opacity-100 transform translate-x-0"
+        x-transition:leave-end="opacity-0 transform -translate-x-1/4"
+      >
+        <div class="staffscanner__organisation">
+          <div
+            class="flex flex-col-reverse h-full grid-cols-12 grid-rows-none px-4 pt-4 lg:grid lg:p-0"
+          >
+            <div
+              class="flex flex-col justify-center col-span-4 col-start-2 py-8 lg:p-0"
+            >
+              <h2
+                class="mb-4 text-3xl font-extrabold text-staffscanner-dark"
+              >
+                Manage shifts & locations from your desk with our
+                comprehensive web app
+              </h2>
+              <ul class="staffscanner__organisation--bullets">
+                <li>
+                  View automatically-generated graphs to visually keep
+                  track of how many shifts you’ve covered, which kinds
+                  of workers you need most and how many hours in total
+                  have been filled
+                </li>
+                <li>
+                  Export key info to Excel quickly & easily to
+                  consolidate information for your files and personal
+                  records
+                </li>
+              </ul>
+            </div>
+            <div
+              class="row-span-1 bg-bottom bg-no-repeat bg-contain h-80 lg:col-span-6 lg:col-start-6 lg:h-auto staffscanner__app--web"
+            ></div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        x-show="getState('mobile')"
+        x-transition:enter="transition duration-300"
+        x-transition:enter-start="opacity-0 transform translate-x-1/4"
+        x-transition:enter-end="opacity-100 transform translate-x-0 relative"
+        x-transition:leave="transition duration-300 absolute top-0"
+        x-transition:leave-start="opacity-100 transform translate-x-0"
+        x-transition:leave-end="opacity-0 transform translate-x-1/4"
+      >
+        <div class="staffscanner__organisation">
+          <div
+            class="flex flex-col-reverse h-full grid-cols-12 grid-rows-none px-4 pt-4 lg:grid lg:p-0"
+          >
+            <div
+              class="flex flex-col justify-center col-span-4 col-start-2 py-8 lg:p-0"
+            >
+              <h2
+                class="mb-4 text-3xl font-extrabold text-staffscanner-dark"
+              >
+                Manage your care home on the go with the Staffscanner
+                mobile app
+              </h2>
+              <ul class="staffscanner__organisation--bullets">
+                <li>
+                  Get access to quick overviews of shifts on a clearly
+                  laid out personal dashboard
+                </li>
+                <li>
+                  Receive a notification every time a candidate
+                  applies or is automatically assigned to your shift
+                </li>
+              </ul>
+            </div>
+            <div
+              class="row-span-1 bg-bottom bg-no-repeat bg-contain h-80 lg:col-span-6 lg:col-start-6 staffscanner__app--mobile lg:h-auto"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

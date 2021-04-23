@@ -1,0 +1,64 @@
+{# Base HTML, compatible with what Vite expects #}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    {% include "layouts/components/metadata.njk" %}
+    <title>{{title or metadata.title}}</title>
+    {% if build.env == "production" %} {# Add any CSS from the main
+    script #} {% viteLinkStylesheetTags "src/client/main.ts" %} {%
+    viteLinkModulePreloadTags "src/client/main.ts" %} {% endif %}
+  </head>
+  <body>
+    <main>
+      {% set header = {title: 'Manage your care home on web and
+      mobile', class: 'staffscanner__header--org'} %} {% include
+      "layouts/home/header.njk" %} {% include
+      "layouts/partials/web-mobile-features.njk" %} {% set feature =
+      {smallTitle: 'Flexible rates', title: 'Set your own rates on a
+      location by location basis', subtitle: 'How much you spend on a
+      Nurse, Carer or Senior Carer shift is entirely in your control',
+      image: '
+      <div class="staffscanner__feature--rates"></div>
+      '} %} {% include "layouts/partials/feature.njk" %} {% set
+      feature = {smallTitle: 'Cover difficult shifts', title: 'Trouble
+      covering a shift? Boost it!', subtitle: 'Each shift can be
+      boosted once to be pushed to the top of our staff’s feeds',
+      image: '
+      <div class="staffscanner__feature--boosted"></div>
+      '} %} {% include "layouts/partials/feature-reverse.njk" %} {%
+      set feature = {smallTitle: 'Useful dashboards', title: 'Keep
+      track of your care homes with interactive graphs', subtitle:
+      'Easily check how many hours and shifts you have covered on a
+      location-by-location basis', image: '
+      <div class="staffscanner__feature--graphs"></div>
+      '} %} {% include "layouts/partials/feature.njk" %} {% include
+      "layouts/partials/footer.njk" %}
+    </main>
+    {# We must split development and production scripts In
+    development, vite runs a server to resolve and reload scripts In
+    production, the scripts are statically replaced at build-time The
+    build.env variable is assigned in src/_data/build.js @see
+    https://vitejs.dev/guide/backend-integration.html#backend-integration
+    @see
+    https://www.11ty.dev/docs/data-js/#example-exposing-environment-variables
+    #} {% if build.env == "production" %} {# We must read the
+    production scripts from the Vite manifest. We defer that logic to
+    a custom shortcode #} {% viteScriptTag "src/client/main.ts" %} {%
+    else %}
+    <script
+      type="module"
+      src="http://localhost:3000/@vite/client"
+    ></script>
+    <script
+      type="module"
+      src="http://localhost:3000/src/client/main.ts"
+    ></script>
+    {% endif %}
+  </body>
+</html>

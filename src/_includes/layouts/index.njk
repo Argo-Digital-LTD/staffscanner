@@ -16,7 +16,9 @@
   </head>
   <body>
     <main>
-      {% include "layouts/home/header.njk" %} {% include
+      {% set header = {title: 'Connecting you to short term care
+      shifts in your area.', class: 'staffscanner__header'} %} {%
+      include "layouts/home/header.njk" %} {% include
       "layouts/home/app.njk" %} {% set bulletpoints = [{icon: '
       <path
         stroke-linecap="round"
