@@ -21,6 +21,7 @@ module.exports = {
         'staffscanner-dark': '#006FD6',
         'staffscanner-mid': '#E0EBFF',
         'staffscanner-light': '#F0F5FF',
+        'staffscanner-electric': '#138EFF',
         'staffscanner-orange': '#EA580C',
       },
       transitionProperty: {

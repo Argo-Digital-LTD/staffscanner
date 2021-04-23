@@ -19,6 +19,11 @@ declare global {
       callbackOut: () => unknown,
       current: boolean,
     ) => void;
+    features: () => {
+      state: 'web' | 'mobile';
+      switchToMobile: () => void;
+      getState: (state: 'web' | 'mobile') => boolean;
+    };
   }
 }
 
@@ -83,3 +88,21 @@ export const onScroll = (
 };
 
 window.onScroll = onScroll;
+
+const features = () => {
+  return {
+    state: 'web' as 'web' | 'mobile',
+    switchToMobile() {
+      this.state = 'mobile';
+    },
+    switchToWeb() {
+      this.state = 'web';
+    },
+    getState(state: 'web' | 'mobile') {
+      if (state === this.state) return true;
+      return false;
+    },
+  };
+};
+
+window.features = features;
