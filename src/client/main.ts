@@ -24,6 +24,15 @@ declare global {
       switchToMobile: () => void;
       getState: (state: 'web' | 'mobile') => boolean;
     };
+    contactForm: () => {
+      formData: {
+        name: string;
+        emailAddress: string;
+        company: string;
+        telephoneNo: string;
+        message: string;
+      };
+    };
   }
 }
 
@@ -106,3 +115,48 @@ const features = () => {
 };
 
 window.features = features;
+
+const contactForm = () => {
+  return {
+    formData: {
+      name: '',
+      emailAddress: '',
+      company: '',
+      telephoneNo: '',
+      message: '',
+    },
+    loading: false,
+    buttonLabel: 'Send message',
+    message: '',
+    send() {
+      this.buttonLabel = 'Sending';
+      this.loading = true;
+      fetch('https://my.staffscanner.co.uk/v1/public/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(this.formData),
+      })
+        .then(() => {
+          this.message =
+            'We received your email, we will get back to you within 24 hours.';
+        })
+        .catch(() => {
+          this.message =
+            "That didn't work, please call us at 03300945922.";
+        })
+        .finally(() => {
+          this.formData = {
+            name: '',
+            emailAddress: '',
+            company: '',
+            telephoneNo: '',
+            message: '',
+          };
+          this.loading = false;
+          this.buttonLabel = 'Send Message';
+        });
+    },
+  };
+};
+
+window.contactForm = contactForm;

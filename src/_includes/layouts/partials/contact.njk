@@ -1,0 +1,126 @@
+<div x-data="contactForm()">
+  <div class="flex justify-center py-8 bg-staffscanner-mid">
+    <div class="grid justify-center max-w-5xl grid-cols-12 gap-8">
+      <div
+        class="flex flex-col justify-center col-span-7 py-8 lg:p-0"
+      >
+        <h2
+          class="mb-4 text-3xl font-extrabold text-staffscanner-dark"
+        >
+          Manage shifts & locations from your desk with our
+          comprehensive web app
+        </h2>
+        <ul class="staffscanner__organisation--bullets">
+          <li>
+            View interactive graphs to visually keep track of how many
+            shifts you’ve covered, which kinds of workers you need
+            most and how many hours in total have been filled
+          </li>
+          <li>
+            Export key info to Excel quickly & easily to consolidate
+            information for your files and personal records
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-span-5 px-6 py-4 bg-white rounded-lg shadow">
+        <form @submit.prevent="send">
+          <label>
+            <span class="text-gray-700">Full name</span>
+            <input
+              type="text"
+              placeholder=""
+              name="name"
+              x-model="formData.name"
+              class="block w-full mt-1 mb-2 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              required
+            />
+          </label>
+          <label>
+            <span class="text-gray-700">Email</span>
+            <input
+              type="email"
+              placeholder=""
+              name="emailAddress"
+              autocomplete="email"
+              x-model="formData.emailAddress"
+              class="block w-full mt-1 mb-2 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              required
+            />
+          </label>
+          <label>
+            <span class="text-gray-700">Company</span>
+            <input
+              type="text"
+              placeholder=""
+              name="company"
+              x-model="formData.company"
+              class="block w-full mt-1 mb-2 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              required
+            />
+          </label>
+          <label>
+            <span class="text-gray-700">Telephone Number</span>
+            <input
+              type="tel"
+              placeholder=""
+              name="telephoneNo"
+              autocomplete="telephone"
+              x-model="formData.telephoneNo"
+              class="block w-full mt-1 mb-2 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              required
+            /> </label
+          ><label class="block">
+            <span class="text-gray-700">Additional details</span>
+            <textarea
+              class="block w-full mt-1 mb-2 border-gray-300 rounded-md shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+              rows="3"
+              x-model="formData.message"
+            ></textarea>
+          </label>
+          <div
+            x-text="message"
+            class="mb-4 text-sm text-gray-500"
+          ></div>
+          <button
+            type="submit"
+            class="inline-flex items-center justify-center w-full px-4 py-3 text-white transition-colors rounded-lg bg-staffscanner-dark hover:bg-opacity-80"
+          >
+            <div
+              class="mr-2"
+              x-show="loading"
+              x-transition:enter="transition ease-out duration-300"
+              x-transition:enter-start="opacity-0 transform scale-90"
+              x-transition:enter-end="opacity-100 transform scale-100"
+              x-transition:leave="transition ease-in duration-300"
+              x-transition:leave-start="opacity-100 transform scale-100"
+              x-transition:leave-end="opacity-0 transform scale-90"
+            >
+              <svg
+                class="animate-spin"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.2"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12 19C15.866 19 19 15.866 19 12C19 8.13401 15.866 5 12 5C8.13401 5 5 8.13401 5 12C5 15.866 8.13401 19 12 19ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <span x-text="buttonLabel"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
