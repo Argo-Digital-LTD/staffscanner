@@ -13,7 +13,7 @@ body {
 }
 
 .staffscanner__navlinks li {
-  @apply inline-flex font-medium text-gray-900;
+  @apply inline-flex items-center font-medium text-gray-900;
 }
 
 @media (max-width: 767px) {
