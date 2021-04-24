@@ -54,7 +54,7 @@ export const createObserver = (
 
   if (!threshold) {
     // set default value
-    threshold = 0.5;
+    threshold = 0;
   }
 
   const config = {
