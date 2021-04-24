@@ -1,0 +1,37 @@
+<div
+  class="flex flex-col h-screen bg-right-top bg-no-repeat bg-contain {{ header.class }}"
+  style="max-height: 85vh"
+>
+  <header class="flex flex-col flex-1">
+    {% include "layouts/partials/navigation.njk" %}
+    <div
+      class="grid self-stretch flex-1 w-full grid-cols-12 p-4 lg:p-8"
+    >
+      <div class="self-center col-span-12 lg:col-span-4">
+        <h1 class="text-4xl font-extrabold text-staffscanner-dark">
+          {{ header.title }}
+        </h1>
+        <div class="flex flex-col mt-4 lg:flex-row">
+          <a
+            class="flex items-center justify-between flex-1 px-4 py-3 mb-4 mr-2 font-medium text-white transition-colors rounded-lg lg:mb-0 bg-staffscanner-dark hover:bg-opacity-80"
+            href="#staffscanner_contact_form"
+            >Contact us<svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              /></svg
+          ></a>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+{% set partners = ['/img/Thistle.png', '/img/Balhousie.png',
+'/img/Barchester.png'] %} {% include "layouts/partials/trusted.njk" %}
