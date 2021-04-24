@@ -8,7 +8,7 @@
         'translate-y-0 opacity-100': loaded,
         'translate-y-10 opacity-0': !loaded
     }"
-  x-init="() => { createObserver($refs.section, 0.2, () => {loaded = true}, () => {loaded = false})}"
+  x-init="() => { createObserver($refs.section, 0.4, () => {loaded = true}, () => {loaded = false})}"
 >
   <div class="flex flex-col w-full h-full grid-cols-12 lg:grid">
     <div
