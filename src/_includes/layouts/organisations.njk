@@ -18,7 +18,7 @@
     <main>
       {% set header = {title: 'Manage your care home on web and
       mobile', class: 'staffscanner__header--org'} %} {% include
-      "layouts/home/header.njk" %} {% include
+      "layouts/home/org-header.njk" %} {% include
       "layouts/partials/web-mobile-features.njk" %} {% set feature =
       {smallTitle: 'Flexible rates', title: 'Set your own rates on a
       location by location basis', subtitle: 'How much you spend on a
@@ -38,6 +38,7 @@
       location-by-location basis', image: '
       <div class="staffscanner__feature--graphs"></div>
       '} %} {% include "layouts/partials/feature.njk" %} {% include
+      "layouts/partials/contact.njk" %}{% include
       "layouts/partials/footer.njk" %}
     </main>
     {# We must split development and production scripts In
