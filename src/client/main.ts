@@ -131,7 +131,7 @@ const contactForm = () => {
     send() {
       this.buttonLabel = 'Sending';
       this.loading = true;
-      fetch('https://app.staffscanner.co.uk/v1/public/contact', {
+      fetch('https://api.staffscanner.co.uk/v1/public/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(this.formData),
