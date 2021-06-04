@@ -206,6 +206,9 @@ Care Service Providers that cancel a shift or assignment within 24 hours of the 
 assignment starting time will be charged 50% of the assignment value and the full
 charge which would be payable to Staffscanner had it proceeded.
 
+Staffscanner is entitled to send any healthcare professional to an assignment within
+reasonable distance of the cancelled assignment.
+
 Health Care Professionals that cancel a shift or assignment within 24 hours of the shift
 or assignment starting or during a shift will be subject to disciplinary action and
 potentially be removed from the Staffscanner platform.
