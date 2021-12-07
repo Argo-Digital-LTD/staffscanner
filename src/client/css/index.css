@@ -9,7 +9,7 @@ body {
 }
 
 .staffscanner__h5 {
-  @apply text-lg font-bold tracking-wide uppercase text-staffscanner-dark;
+  @apply text-base font-medium tracking-wide text-staffscanner-dark;
 }
 
 .staffscanner__navlinks li {
@@ -122,4 +122,12 @@ body {
   .staffscanner__feature--pricing {
     height: 600px;
   }
+}
+
+.staffscanner__partner {
+  @apply transition-opacity opacity-50 cursor-pointer;
+}
+
+.staffscanner__partner:hover {
+  @apply opacity-100;
 }
