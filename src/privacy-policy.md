@@ -1,5 +1,7 @@
 All data you submit will be sent to Staffscanner for processing and ultimately allows you to use our service, so by submitting any data to us you are consenting to us processing the supplied personal data solely for the purposes of platform usage.
 
+We will only ever request data which is essential to allowing you to use our platform, and we will never send your details to a third party.
+
 Your data will be securely stored in the United Kingdom and will be encrypted both in transit and at rest.
 
 # Your rights
