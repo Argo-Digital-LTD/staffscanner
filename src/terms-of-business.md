@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Staffscanner - Connecting with those who care
-heading: STAFFSCANNER TERMS AND CONDITIONS
+heading: STAFFSCANNER TERMS OF BUSINESS
 ---
 These Terms and Conditions for the Supply of Temporary Workers apply between Staffscanner (NP) Ltd &
 Staffscanner Ltd (forthwith referred to as Staffscanner) and any Client (as defined below).
@@ -421,17 +421,17 @@ damage to, personal data; and
 
 **(g)** not transfer any personal data outside of the European Economic Area unless the transferor:
 
-```
+
 (i) complies with the provisions of Article 26 of the General Data Protection Regulation (in the
 event the third party is a joint controller); and
-```
-```
+
+
 (ii) ensures that (i) the transfer is to a country approved by the European Commission as
 providing adequate protection pursuant to Article 45 of the General Data Protection Regulation; (ii)
 there are appropriate safeguards in place pursuant to Article 46 of the General Data Protection
 Regulation; or (iii) one of the derogations for specific situations in Article 49 of the General Data
 Protection Regulation applies to the transfer.
-```
+
 **12.5** Each party shall assist the other in complying with all applicable requirements of the Data Protection
 Legislation. In particular, each party shall:
 
