@@ -3,8 +3,10 @@ layout: layouts/page.njk
 title: Staffscanner - Connecting with those who care
 heading: STAFFSCANNER TERMS OF BUSINESS
 ---
+
 These Terms and Conditions for the Supply of Temporary Workers apply between Staffscanner (NP) Ltd &
 Staffscanner Ltd (forthwith referred to as Staffscanner) and any Client (as defined below).
+
 
 These terms are effective from 01/04/2022 and supersede all previous terms and conditions. All Temporary
 Workers (as defined below) are introduced and/or supplied by Staffscanner to the Client upon these terms.
@@ -17,42 +19,57 @@ The following definitions and rules of interpretation apply in this agreement.
 
 ## 1.1 DEFINITIONS
 
+
 Assignment: has the meaning given in Clause 3 (Client’s obligations).
 
+
 AWR 2010: the Agency Workers Regulations 2010 ( SI 2010/93 ).
+
 
 Business Day: a day other than a Saturday, Sunday, or public holiday in Scotland, when banks in Scotland
 are open for business.
 
+
 Client: the person, firm, or corporate body together with any subsidiary or associated person, firm, or
 corporate body (as the case may be) to whom the Temporary Worker is introduced.
 
+
 Conduct Regulations 2003: the Conduct of Employment Agencies and Employment Businesses Regulations
 2003 ( SI 2003/3319 ).
+
 
 Engage: the employment of a Temporary Worker or engagement directly or indirectly through any
 employment business other than through Staffscanner (whether for a definite or indefinite period) as a
 direct result of any Introduction or Assignment to the Client and the terms Engaged or Engagement shall be
 construed accordingly.
 
+
 Extended Assignment: has the meaning given in Clause 4.2.
+
 
 Indemnity: has the meaning given in Clause 9.5 and Indemnified and Indemnifies shall be construed
 accordingly.
 
+
 Introduce: the provision to the Client of information by Staffscanner which identifies the Temporary Worker
 and Introduction and Introduced shall be construed accordingly.
+
 
 Introduction Date: the date Staffscanner Introduces the Temporary Worker to the Client in accordance with
 Clause 2 (Staffscanners obligations).
 
+
 Introduction Fee: has the meaning given in Clause 4.1.
+
 
 Staffscanner: Staffscanner Limited , incorporated and registered with company number SC566169 whose
 registered office is at 93 West Regent Street, Glasgow G2 2BA.
 
+
 Other Qualifying Payments: any remuneration payable to the Temporary Worker (other than their basic
 hourly rate), which is not excluded by virtue of regulation 6 of the AWR 2010, such as any overtime, shift
+
+
 
 premium, commission or any bonus, incentive or rewards which are directly attributable to the amount or
 quality of work done by a Temporary Worker and are not linked to a financial participation scheme (as
@@ -187,8 +204,8 @@ Client Engages the Temporary Worker directly or to a third party, the Client wil
 Introduction Fee at the following rate:
 
 **Nurses:** £1950 for contract of 20 hours or less per week and £2950 for contract of over 20 hours per week
-**Senior Healthcare Assistant:** £
-**Healthcare Assistant/Support Worker:** £ 950
+**Senior Healthcare Assistant:** £1500
+**Healthcare Assistant/Support Worker:** £950
 
 ## 5. UNSATISFACTORY TEMPORARY WORKERS
 
@@ -450,6 +467,7 @@ Data.
 venture between any of the parties, constitute any party the agent of another party, or authorise any party
 to make or enter into any commitments for or on behalf of any other party.
 
+
 14.2 Each party confirms it is acting on its own behalf and not for the benefit of any other person.
 
 ## 15. VARIATION
@@ -468,9 +486,11 @@ amendments.
 all previous agreements, promises, assurances, warranties, representations, and understandings
 between them, whether written or oral, relating to its subject matter.
 
+
 16.2 The Client acknowledges that in entering into this agreement it does not rely on, and shall have no
 remedies in respect of, any statement, representation, assurance, or warranty (whether made
 innocently or negligently) that is not set out in this agreement.
+
 
 16.3 The Client agrees that it shall have no claim for innocent or negligent misrepresentation or negligent
 misstatement based on any statement in this agreement.
@@ -503,8 +523,10 @@ Unless it expressly states otherwise, this agreement does not give rise to any r
 telephone, any notice or other communication given to Staffscanner under or in connection with this
 agreement shall be in writing and shall be:
 
+
 (a) delivered by hand or by pre-paid first-class post or other next working day delivery service at its
 registered office or its principal place of business; or
+
 
 (b) sent by email to the address specified in correspondence with the Client.
 
@@ -514,8 +536,10 @@ registered office or its principal place of business; or
 (a) if delivered by hand, on signature of a delivery receipt or at the time the notice is left at the proper
 address.
 
+
 (b) if sent by pre-paid first-class post or other next working day delivery service, at 9.00 am on the second
 Business Day after posting or at the time recorded by the delivery service; and
+
 
 (c) if sent by email, at the time of transmission, or, if this time falls outside business hours in the place of
 receipt, when business hours resume. In this Clause 20.2(c) business hours means 9.00am to 5.00pm
