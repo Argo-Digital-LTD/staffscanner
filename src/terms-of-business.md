@@ -4,8 +4,7 @@ title: Staffscanner - Connecting with those who care
 heading: STAFFSCANNER TERMS OF BUSINESS
 ---
 
-These Terms and Conditions for the Supply of Temporary Workers apply between Staffscanner (NP) Ltd &
-Staffscanner Ltd (forthwith referred to as Staffscanner) and any Client (as defined below).
+These Terms and Conditions for the Supply of Temporary Workers apply between Staffscanner Ltd (forthwith referred to as Staffscanner) and any Client (as defined below).
 
 
 These terms are effective from 01/04/2022 and supersede all previous terms and conditions. All Temporary
@@ -63,7 +62,7 @@ Introduction Fee: has the meaning given in Clause 4.1.
 
 
 Staffscanner: Staffscanner Limited , incorporated and registered with company number SC566169 whose
-registered office is at 93 West Regent Street, Glasgow G2 2BA.
+registered office is at 125 West Regent Street, Glasgow G2 2SD.
 
 
 Other Qualifying Payments: any remuneration payable to the Temporary Worker (other than their basic
@@ -90,10 +89,6 @@ regulation 3 of the AWR 2010.
 **Territory:** The United Kingdom.
 
 **Unsatisfactory Temporary Worker:** has the meaning given in Clause 5.1.
-
-**Valid Opt-Out:** means written notification from a company Worker and the individual provided by that
-company Worker in accordance with regulation 32(9) of the Conduct Regulations 2003, as amended from
-time to time.
 
 **VAT:** value added tax chargeable in the UK.
 
@@ -123,7 +118,7 @@ from time to time.
 **1.7** A reference to a statute or statutory provision shall include all subordinate legislation made from time
 to time under that statute or statutory provision.
 
-**1.8** A reference to **writing** or **written** includes fax, email, or communications through the Staffscanner App.
+**1.8** A reference to **writing** or **written** includes fax, email, or communications through the Staffscanner App and acceptance of these terms and conditions by virtue of continued use.
 
 **1.9** Any obligation on a party not to do something includes an obligation not to allow that thing to be done.
 
@@ -230,7 +225,7 @@ or by contacting our on-call team. Where the client terminates an assignment 24 
 provided in writing.
 
 **5.4** Where an Assignment is terminated under Clause 5.3, the Client remains responsible for the payment of
-Temporary Worker Fees (including the Staffscanner fee).
+Temporary Worker Fees (including the Staffscanner fee).  If a candidate is late or does not attend for shift it is the Clients obligation to inform Staffscanner within 24 hours.  Failure to do so will result in being charged for the full shift.
 
 **5.5** Staffscanner shall notify the Client if it reasonably believes that any Temporary Worker is unsuitable for
 the Assignment. Staffscanner may also contact the Client with an alternative Temporary Worker if the
@@ -240,17 +235,16 @@ Temporary Worker should be unable to commence Assignment for any reason whatsoev
 
 **6.1** The Client will pay Staffscanner Temporary Worker Fees in respect of Temporary Workers in accordance
 with the scale of charges advised to the Client via the Staffscanner platform. The Temporary Worker Fees
-comprise of the Temporary Worker’s pay and holiday pay and include Staffscanner Limited’s commission
+comprise of the Temporary Worker’s pay and holiday pay and include Staffscanner’s commission
 and employer’s National Insurance contributions. The following conditions apply to the Temporary Worker
 Fees:
 
 **(a)** fees are calculated according to the number of hours worked by the Temporary Worker (to the nearest
 quarter hour).
-**(b)** the Client shall during the Assignment verify the number of hours worked by the Temporary Worker.
-If the Client is unable to verify hours worked due to the Client disputing the hours claimed, the Client
-shall inform Staffscanner immediately and shall co-operate fully and in a timely fashion with
+**(b)** if the Client is unable to verify hours worked due to the Client disputing the hours claimed, the Client
+shall inform Staffscanner within 24 hours of the date of the shift and shall co-operate fully and in a timely fashion with
 Staffscanner to enable Staffscanner to establish what hours, if any, were worked by the Temporary
-Worker.
+Worker and any amendments thereto.
 
 **(c)** Failure to verify hours does not absolve the Client of its obligation to pay the Temporary Worker Fees
 in respect of the hours actually worked.
@@ -564,5 +558,3 @@ its subject matter or formation.
 App, Staffscanner website or by calling the Staffscanner office and booking a Staffscanner member of staff
 shall be deemed acceptance of this contract and the rates at the point of booking a Staffscanner member.
 The rates are always available by logging in and accessing the pay settings.**
-
-
