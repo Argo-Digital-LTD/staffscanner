@@ -97,7 +97,7 @@ person who by reason of age, infirmity, illness, disability, or any other circum
 attention and includes any person under the age of eighteen.
 
 **Worker:** an individual worker, or a worker that is a company or other legal entity, as the case may be
-including any of StaffScanner own employees, workers, or agency staff.
+including any of Staffscanner own employees, workers, or agency staff.
 
 **1.2** A **person** includes a natural person, corporate or unincorporated body (whether or not having separate
 legal personality).
@@ -336,7 +336,7 @@ misrepresentation or the breach of any obligation to be performed by the Client 
 after termination of this agreement, disclose to any person any confidential information concerning the
 business, affairs, customers, clients, or suppliers of Staffscanner, except as permitted by Clause 11.2.
 
-**11.2** The Client may disclose StaffScanner confidential information:
+**11.2** The Client may disclose Staffscanner confidential information:
 
 **(a)** to its employees, officers, representatives, or advisers who need to know such information for the
 purposes of carrying out its obligations under this agreement. The Client shall ensure that its employees,
