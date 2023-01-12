@@ -20,7 +20,7 @@ The following definitions and rules of interpretation apply in this agreement.
 
 **AWR 2010:** the Agency Workers Regulations 2010 (_SI 2010/93_).
 
-**Business Day:** a day other than a Saturday, Sunday, or public holiday in Scotland, when banks in Scotland are open for business.
+**Business Day:** a day other than a Saturday, Sunday, or public holiday, when banks are open for business.
 
 **Client:** the person, firm, or corporate body together with any subsidiary or associated person, firm, or corporate body (as the case may be) to whom the Temporary Worker is introduced.
 
@@ -129,7 +129,7 @@ If, following the supply of a Temporary Worker by Staffscanner to the Client wit
 
 **5.2** The Client may terminate the Assignment by instructing the Unsatisfactory Temporary Worker to leave the Assignment immediately and notifying Staffscanner immediately, or by directing Staffscanner immediately to remove the Unsatisfactory Temporary Worker. In such circumstances, Staffscanner may reduce the charges for the time worked by that Temporary Worker, provided that the Assignment terminates before the end of the first day of the Assignment or within two hours of the start of the Assignment if the Temporary Worker is to be used for less than 12 hours in any one week.
 
-**5.3** In all other circumstances, Staffscanner or the Client may terminate an Assignment at any time in writing or by contacting our on-call team. Where the client terminates an assignment 24 hours' notice must be provided in writing.
+**5.3** In all other circumstances, Staffscanner or the Client may terminate an Assignment at any time in writing or by contacting our on-call team. Where the client terminates an assignment 24 hours' notice must be provided.
 
 **5.4** Where an Assignment is terminated under Clause 5.3, the Client remains responsible for the payment of Temporary Worker Fees (including the Staffscanner fee).
 
